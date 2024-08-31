@@ -2,7 +2,7 @@ import React from "react";
 import Home from './home/Home.jsx'; 
 import { Routes, Route, Navigate } from "react-router-dom";
 import Courses from "./courses/Courses";
-import Signup from "./components/signup";
+import Signup from "./components/Signup.jsx";
 import Contactus from "./components/Contactus";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
