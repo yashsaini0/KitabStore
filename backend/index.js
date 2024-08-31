@@ -8,7 +8,10 @@ import userRoute from "./route/user.route.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://your-vercel-app.vercel.app', // Replace with your actual Vercel app domain
+}));
+
 app.use(express.json());
 
 dotenv.config();
@@ -17,12 +20,11 @@ const PORT = process.env.PORT || 4000;
 const URI=process.env.MongoDBURI;
 
 //Connect to MongoDB 
-try {
-    mongoose.connect(URI);
-    console.log("Connected to mongoDB");
-} catch (error) {
-    console.log("error",error);
-}
+mongoose.connect(URI, {
+})
+.then(() => console.log("Connected to MongoDB"))
+.catch((error) => console.log("MongoDB connection error:", error));
+
 
 //Defining Routes
 app.use("/book",bookRoute);
