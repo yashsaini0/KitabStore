@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
-import Cards from "./Cards";
+import Cards from "./Cards.jsx";
 import { Link } from "react-router-dom";
 function Course() {
   const [book,setBook] = useState([])

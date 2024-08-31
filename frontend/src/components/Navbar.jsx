@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Login from "./Login";
-import { useAuth } from "../context/AuthProvider";
-import Logout from "./Logout";
+import Login from "./Login.jsx";
+import { useAuth } from "../context/AuthProvider.jsx";
+import Logout from "./Logout.jsx";
 
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();

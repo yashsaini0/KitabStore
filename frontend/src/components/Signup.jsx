@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
-import Login from "./Login";
+import Login from "./Login.jsx";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";

@@ -6,7 +6,7 @@ import Slider from "react-slick"
 
 import axios from "axios"
 
-import Cards from "./Cards"
+import Cards from "./Cards.jsx"
 
 function Freebook() {
   const [book,setBook] = useState([])
